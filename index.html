@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri Marketplace - Fair Trade Made Easy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hero.css">
+
+        <!-- Font Awesome CDN -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="language-selector">
+                <select>
+                    <option>Language (EN)</option>
+                </select>
+            </div>
+           <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+            <div class="user-info">
+                <!-- User info will be populated by JavaScript -->
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="logo">
+                <span class="logo-text">AGRO MARKETPLACE</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="market.html">MARKET</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+                <!-- <li><a href="#">CROP CONVERTER</a></li> -->
+                <!-- <li><a href="#">ABOUT US</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <marquee behavior="scroll" direction="LEFT"><H1>WELCOME TO THE AGRO MART</H1></marquee>
+            <h1>
+                A B2B DIGITAL MARKETPLACE WHERE FAIR FOOD TRADE IS MADE EASY, FAST, AND TRANSPARENT!
+            </h1>
+            <div class="agr-counter">
+                <span>+</span>
+                <span class="counter">6900</span>
+                <span>ghouls</span>
+            </div>
+        </div>
+         <!-- Toggle Buttons -->
+    <!-- <div class="user-toggle">
+        <button id="buyerBtn" class="toggle-btn">Buyer</button>
+        <button id="sellerBtn" class="toggle-btn">Seller</button>
+    </div> -->
+        <div class="product-selector">
+            <h2>SELECT A PRODUCT TO BUY/SELL</h2>
+            
+            <div class="product-grid" id="productGrid">
+                
+               
+                <div class="product-item" data-product="grains">
+               <a href="product.html">
+                <span class="product-icon">🌾</span>
+                <span>GRAINS</span>
+               </a>
+                </div>
+                <!-- <div class="product-item" data-product="grains">
+                    <a href="product.html">
+                        <span class="product-icon">🌾</span>
+                        <span>GRAINS</span>
+                    </a>
+                </div> -->
+                <div class="product-item" data-product="nuts">
+                    <span class="product-icon">🥜</span>
+                    <span>NUTS</span>
+                </div>
+                <div class="product-item" data-product="coffee">
+                    <span class="product-icon">☕</span>
+                    <span>GREEN COFFEE</span>
+                </div>
+                <div class="product-item" data-product="oils">
+                    <span class="product-icon">🫒</span>
+                    <span>OLIVE OIL & OTHER OILS</span>
+                </div>
+            </div>
+            <div class="product-help">
+                <p>CAN'T FIND THE PRODUCT YOU ARE LOOKING FOR?</p>
+                <a href="#" class="talk-btn">TALK TO US</a>
+            </div>
+            <!-- Add Product Form -->
+            <div class="add-product">
+                <h3>Add a New Product</h3>
+                <form id="addProductForm">
+                    <input type="text" id="productName" placeholder="Enter Product Name" required>
+                    <input type="text" id="productIcon" placeholder="Enter Product Icon (e.g., 🌽)" required>
+                    <button type="submit" class="add-product-btn">Add Product</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <h2>OUR <span class="green-text">SOLUTION</span></h2>
+        <p class="solution-intro">Agri Marketplace is a digital B2B market solution that brings together Farmers and Industrial Buyers.</p>
+        <video width="80%" playsinline autoplay muted loop>
+            <source src="videos/OVP_Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="solution-content">
+            <div class="solution-text">
+                <p>We drive agricultural transactions through our digital platform in combination with our service partnership network. Agri Marketplace accommodates online payments between buyer and seller, product quality check options, and end-to-end logistic services.</p>
+                <p>Agri Marketplace does not buy or sell crops and is not a broker. Instead, we offer you the ability to effortlessly market your crop via our platform.</p>
+                <div class="solution-buttons">
+                    <a href="market.html" class="explore-btn">Explore the marketplace</a>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>HOW IT <span class="gray-text">WORKS</span></h2>
+        <p class="subtitle">TAKE A LOOK AT OUR <span class="green-text">PLATFORM DEMO</span>.</p>
+        <div class="steps-container">
+            <div class="steps-list">
+                <ol>
+                    <li>Sign-up to the platform</li>
+                    <li>Create your offer or bid</li>
+                    <li>Set a quantity & price</li>
+                    <li>Provide us with crop characteristics & details</li>
+                    <li>Decide upon your preferred incoterm</li>
+                    <li>Decide upon logistic and/or crop quality check services</li>
+                    <li>Post your seller offer or buyer bid</li>
+                    <li>Stay updated by email or notification centre</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Started Section -->
+    <section class="get-started">
+        <h2>GET STARTED</h2>
+        <p>We open the door to thousands of approved buyers and sellers. Post your crop bid as a registered buyer, or create your crop offer as a platform verified seller. Through our rigorous customer compliance we make sure that only reliable users gain access to our digital marketplace.</p>
+        <a href="login.html"class="join-now-btn">JOIN NOW</a>
+    </section>
+      
+<footer>
+    <div class="social-links">
+        <!-- Social Links -->
+     
+     <div class="social-links">
+         <a href="https://www.facebook.com/YourPageName" target="_blank" class="social-link facebook">
+             <i class="fab fa-facebook"></i> Facebook
+         </a>
+         <a href="https://www.instagram.com/YourProfileName" target="_blank" class="social-link instagram">
+             <i class="fab fa-instagram"></i> Instagram
+         </a>
+         <a href="https://www.linkedin.com/in/YourProfileName" target="_blank" class="social-link linkedin">
+             <i class="fab fa-linkedin"></i> LinkedIn
+         </a>
+         <a href="https://twitter.com/YourProfileName" target="_blank" class="social-link twitter">
+             <i class="fab fa-twitter"></i> Twitter
+         </a>
+         <a href="https://www.youtube.com/channel/YourChannelID" target="_blank" class="social-link youtube">
+             <i class="fab fa-youtube"></i> YouTube
+         </a>
+         </div>
+</footer>
+</div>
+    </div>
+    <script src="script.js"></script>
+    <script src="product-details-handler.js"></script>
+    <script src="hero.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - Buyer & Seller Interfaces</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <span class="logo-text">Marketplace</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#buyer-section">Buyer</a></li>
+                <li><a href="#seller-section">Seller</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Buyer Section -->
+    <section id="buyer-section" class="buyer-interface">
+        <h2>Welcome, <span id="buyer-name">Buyer</span></h2>
+        <h3>Available Products</h3>
+        <div class="product-list">
+            <div class="product-item">
+                <h4>Product: Grains</h4>
+                <p>Ongoing Price: $100/ton</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-item">
+                <h4>Product: Nuts</h4>
+                <p>Ongoing Price: $200/ton</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seller Section -->
+    <section id="seller-section" class="seller-interface">
+        <h2>Welcome, Seller</h2>
+        <h3>Market Rates</h3>
+        <div class="market-rates">
+            <div class="rate-item">
+                <h4>Grains</h4>
+                <p>Market Price: $100/ton</p>
+            </div>
+            <div class="rate-item">
+                <h4>Nuts</h4>
+                <p>Market Price: $200/ton</p>
+            </div>
+        </div>
+        <h3>Contact Support</h3>
+        <div class="contact-panel">
+            <p>Need help? Reach out to our support team.</p>
+            <button class="contact-btn">Contact Us</button>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment-section" class="payment-interface">
+        <h2>Payment</h2>
+        <p>Choose your payment method to proceed:</p>
+        <button class="pay-btn">Pay Now</button>
+        <button class="get-paid-btn">Get Paid</button>
+    </section>
+<!-- Help Panel -->
+<div class="help-panel">
+    <h3>Need Help?</h3>
+    <p>Contact us for assistance!</p>
+    <a href="#">Visit Help Page</a>
+</div>
+</section>
+    <script>
+        // Example JavaScript to dynamically set buyer name after login
+        document.getElementById('buyer-name').textContent = 'John Doe';
+    </script>
+    <script src="buyerseller.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - ARGO MARKETPLACE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="features.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="language-selector">
+                <select>
+                    <option>Language (EN)
+                        <option>HINDI (HN)
+                            <option>GUJRATI (GJ)
+
+                    </option>
+                </select>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="logo">
+                <span class="logo-text">AGRO MARKETPLACE</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="market.html">MARKET</a></li>
+                <li><a href="features.html" class="active">FEATURES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="features-main">
+        <!-- Feature Cards Section -->
+        <section class="feature-cards">
+            <h1 class="section-title">Our <span class="highlight">Features</span></h1>
+            <div class="cards-container">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="card-icon">🔍</div>
+                    <h3>Advanced Search</h3>
+                    <p>Find exactly what you're looking for with our powerful search tools.</p>
+                    <button class="feature-btn" onclick="scrollToSection('search')">Try Search</button>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">📝</div>
+                    <h3>Smart Contracts</h3>
+                    <p>Create and manage secure agricultural contracts with ease.</p>
+                    <button class="feature-btn" onclick="scrollToSection('contracts')">View Contracts</button>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">💬</div>
+                    <h3>Direct Negotiation</h3>
+                    <p>Negotiate prices and terms directly with buyers and sellers.</p>
+                    <button class="feature-btn" onclick="scrollToSection('negotiation')">Start Negotiating</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section id="search" class="feature-section">
+            <h2>Advanced Search</h2>
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="crop_type">Crop Type</label>
+                    <select id="crop_type" name="crop_type" required>
+                        <option value="">Select Crop Type</option>
+                        <option value="grains">Grains</option>
+                        <option value="nuts">Nuts</option>
+                        <option value="coffee">Coffee</option>
+                        <option value="oils">Oils</option>
+                    </select>
+                </div>
+                <div class="form-group price-range">
+                    <div>
+                        <label for="price_min">Min Price</label>
+                        <input type="number" id="price_min" name="price_min" placeholder="0">
+                    </div>
+                    <div>
+                        <label for="price_max">Max Price</label>
+                        <input type="number" id="price_max" name="price_max" placeholder="1000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="Enter location">
+                </div>
+                <button type="submit" class="submit-btn">Search</button>
+            </form>
+        </section>
+
+        <!-- Contracts Section -->
+        <section id="contracts" class="feature-section">
+            <h2>Smart Contracts</h2>
+            <form class="contract-form">
+                <div class="form-group">
+                    <label for="farmer_name">Farmer Name</label>
+                    <input type="text" id="farmer_name" name="farmer_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="buyer_name">Buyer Name</label>
+                    <input type="text" id="buyer_name" name="buyer_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contract_terms">Contract Terms</label>
+                    <textarea id="contract_terms" name="contract_terms" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Create Contract</button>
+            </form>
+        </section>
+
+        <!-- Negotiation Section -->
+        <section id="negotiation" class="feature-section">
+            <h2>Price Negotiation</h2>
+            <form class="negotiation-form">
+                <div class="form-group">
+                    <label for="product_name">Product Name</label>
+                    <input type="text" id="product_name" name="product_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="proposed_price">Proposed Price</label>
+                    <input type="number" id="proposed_price" name="proposed_price" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Proposal</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <!-- Social Links -->
+         
+         <div class="social-links">
+             <a href="https://www.facebook.com/YourPageName" target="_blank" class="social-link facebook">
+                 <i class="fab fa-facebook"></i> Facebook
+             </a>
+             <a href="https://www.instagram.com/YourProfileName" target="_blank" class="social-link instagram">
+                 <i class="fab fa-instagram"></i> Instagram
+             </a>
+             <a href="https://www.linkedin.com/in/YourProfileName" target="_blank" class="social-link linkedin">
+                 <i class="fab fa-linkedin"></i> LinkedIn
+             </a>
+             <a href="https://twitter.com/YourProfileName" target="_blank" class="social-link twitter">
+                 <i class="fab fa-twitter"></i> Twitter
+             </a>
+             <a href="https://www.youtube.com/channel/YourChannelID" target="_blank" class="social-link youtube">
+                 <i class="fab fa-youtube"></i> YouTube
+             </a>
+             </div>
+    </footer>
+    <script src="features.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

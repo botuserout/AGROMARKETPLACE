@@ -1,0 +1,379 @@
+<!-- grains.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grains - ARGO MARKETPLACE</title>
+    <link rel="stylesheet" href="product-page.css">
+     <link rel="stylesheet" href="style.css">
+     <STYLE>/* General Styles */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2E8B57;
+    color: white;
+    padding: 10px 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.auth-buttons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.auth-buttons a:hover {
+    background: white;
+    color: #2E8B57;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #1e693f;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background: white;
+    color: #1e693f;
+}
+
+/* Product Page Layout */
+.product-page {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Filters Section */
+.characteristics {
+    /* width: 30%; */
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    width: 46.4%;
+    display: grid;
+}
+
+.characteristics h2 {
+    text-align: center;
+
+    color: #2E8B57;
+}
+
+select, input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Order Board */
+.order-board {
+    width: 65%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    height: 1500px;
+    width: 45%;
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-offer-btn {
+    background: #2E8B57;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-offer-btn:hover {
+    background: #1e693f;
+}
+
+.board-tabs {
+    display: flex;
+    gap: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tab:hover {
+    color: #2E8B57;
+}
+
+/* .listing-card {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+.details-btn {
+    background: #2E8B57;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.details-btn:hover {
+    background: #1e693f;
+}
+
+/* Grid View */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+.listing-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+</STYLE>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Include the same header as index.html -->
+        <div class="top-bar">
+            <div class="language-selector">
+                <select>
+                    <option>Language (EN)</option>
+                </select>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="logo">
+                <span class="logo-text">Agri Marketplace</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="market.html" class="active">MARKET</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-page">
+        <div class="back-link">
+            <a href="index.html">< Back to Products</a>
+        </div>
+
+        <div class="product-content">
+            <div class="characteristics">
+                <marquee behavior="scroll" direction="left">
+                    <h2>CHARACTERISTICS</h2></marquee>
+                <div class="product-icon-large">🌾</div>
+                <div class="filter-section">
+                    <h3>Product Type</h3>
+                    <select>
+                        <option>All</option>
+                        <option>Rice</option>
+                        <option>Wheat</option>
+                        <option>Corn</option>
+                        <option>Barley</option>
+                    </select>
+
+                    <h3>Product Status</h3>
+                    <select>
+                        <option>All</option>
+                        <option>Available</option>
+                        <option>Sold</option>
+                    </select>
+
+                    <h3>Variety</h3>
+                    <select>
+                        <option>All</option>
+                    </select>
+
+                    <h3>Production Mode</h3>
+                    <select>
+                        <option>All</option>
+                        <option>Conventional</option>
+                        <option>Organic</option>
+                    </select>
+
+                    <h3>Packaging for Shipment</h3>
+                    <select>
+                        <option>All</option>
+                        <option>Bulk</option>
+                        <option>Bags</option>
+                    </select>
+
+                    <h3>Price per weight unit (€)</h3>
+                    <div class="range-input">
+                        <input type="number" placeholder="From">
+                        <span>to</span>
+                        <input type="number" placeholder="To">
+                    </div>
+
+                    <h3>Total Weight</h3>
+                    <div class="range-input">
+                        <input type="number" placeholder="From">
+                        <span>to</span>
+                        <input type="number" placeholder="To">
+                    </div>
+
+                    <h3>Certifications</h3>
+                    <select>
+                        <option>All</option>
+                    </select>
+
+                    <h3>Final Delivery Date</h3>
+                    <div class="range-input">
+                        <input type="date">
+                        <span>to</span>
+                        <input type="date">
+                    </div>
+
+                    <h3>Logistics</h3>
+                    <select>
+                        <option>All</option>
+                        <option>Included</option>
+                        <option>Not Included</option>
+                    </select>
+                </div>
+            </div>
+<section>
+       <div class="container">
+        <div class="order-board">
+            <div class="board-header">
+                <h2>ORDER BOARD</h2>
+                <button class="add-offer-btn">Add new offer</button>
+            </div>
+
+            <div class="results-controls">
+                <div class="showing">
+                    <span>Show</span>
+                    <select>
+                        <option>10</option>
+                        <option>20</option>
+                        <option>50</option>
+                    </select>
+                    <span>Lines Per Page</span>
+                </div>
+            </div>
+
+            <div class="board-content">
+                <div class="board-tabs">
+                    <div class="tab">Commodities</div>
+                    <div class="tab">Bids by Buyers</div>
+                    <div class="tab">Offers by Sellers</div>
+                </div>
+
+                <div class="listings">
+                    <!-- Example listing -->
+                    <div class="listing-card">
+                        <div class="price">€1.450</div>
+                        <div class="quantity">1000.0 MT</div>
+                        <div class="location">FCA UA</div>
+                        <div class="seller-status">VERIFIED SELLER</div>
+                        <div class="expiry">Expires in 47d 15h 57m 36s</div>
+                        <button class="details-btn">Click for details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+       </div>    
+</section>
+    <script src="product-page.js"></script>
+</body>
+</html>

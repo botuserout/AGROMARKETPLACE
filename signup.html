@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up -  AGRO MARKETPLACE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html" class="logo-text"> AGRO MARKETPLACE</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-box signup-box">
+            <h2>Create Account</h2>
+            
+            <!-- User Type Selection -->
+            <div class="form-group user-type-selection">
+                <label>Select Account Type</label>
+                <div class="user-type-buttons">
+                    <button type="button" class="user-type-btn" data-type="seller">Hello! I Am A Seller </button>
+                    <button type="button" class="user-type-btn" data-type="buyer">Hello! I Am A Buyer </button>
+                </div>
+            </div>
+
+            <form id="signupForm" class="auth-form">
+                <!-- Common Fields -->
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                </div>
+
+                <!-- Seller Specific Fields -->
+                <div id="sellerFields" style="display: none;">
+                    <div class="form-group">
+                        <label for="farmName">Farm Name</label>
+                        <input type="text" id="farmName" name="farmName">
+                    </div>
+                    <div class="form-group">
+                        <label for="farmSize">Farm Size (in acres)</label>
+                        <input type="number" id="farmSize" name="farmSize">
+                    </div>
+                    <div class="form-group">
+                        <label for="productsGrown">Products Grown</label>
+                        <textarea id="productsGrown" name="productsGrown" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="certifications">Certifications (if any)</label>
+                        <input type="text" id="certifications" name="certifications">
+                    </div>
+                </div>
+
+                <!-- Buyer Specific Fields -->
+                <div id="buyerFields" style="display: none;">
+                    <div class="form-group">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" id="companyName" name="companyName">
+                    </div>
+                    <div class="form-group">
+                        <label for="businessType">Business Type</label>
+                        <select id="businessType" name="businessType">
+                            <option value="">Select Business Type</option>
+                            <option value="wholesaler">Wholesaler</option>
+                            <option value="retailer">Retailer</option>
+                            <option value="processor">Processor</option>
+                            <option value="exporter">Exporter</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="purchaseVolume">Annual Purchase Volume (in tons)</label>
+                        <input type="number" id="purchaseVolume" name="purchaseVolume">
+                    </div>
+                    <div class="form-group">
+                        <label for="preferredProducts">Preferred Products</label>
+                        <textarea id="preferredProducts" name="preferredProducts" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Business Address</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+
+                <button type="submit" class="auth-button">Create Account</button>
+            </form>
+            <p class="auth-redirect">
+                Already have an account? <a href="login.html">Login</a>
+            </p>
+        </div>
+    </div>
+</body>
+<script src="signup.js"></script>
+</html>
